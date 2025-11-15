@@ -15,3 +15,13 @@ encrypt c:\path\to\folder\file password
 #there is no file recovery if you forget your password and will have to retrieve previous version from one drive. 
 #you can also recursively encrypt ALL backups by repeating the encrypt command if you so choose. Say there are only five file versions and you run encrypt 5 times you have encrypted every version of the file.
 
+
+###to decrypt run the decrypt ps1 file.
+
+#use following commands to decrypt:
+
+#for a single file
+Decrypt-File -FilePath "C:\path\to\your\file.txt" -Password "yourpassword".
+
+#for a directory
+Decrypt-FilesInDirectory -DirectoryPath "C:\path\to\your\directory" -Password "yourpassword".
